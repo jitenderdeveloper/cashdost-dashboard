@@ -33,12 +33,17 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
   object-fit: cover;
 }
+
+.edit-file img,
+.body-img img,
 .navbar-brand img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
+
+.loader,
 .crud,
 .dropdown-men.show,
 .td-p {
@@ -145,19 +150,38 @@ thead {
   width: 90px;
   height: 40px;
 }
+.submit-btn{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  flex-direction: row !important;
+  /* border: 1px solid red; */
+}
+.submit-btn a{
+  margin-right: 12px;
+}
 
+.modal-footer a,
+.submit-btn a,
 .submit-btn button,
 .button-link a{
   /* border: 1px solid red; */
   margin-bottom: 10px;
   background-color: var(--color);
   color: var(--font-color);
+  font-size: 14px;
 }
+.modal-footer a:hover,
+.submit-btn a:hover,
 .submit-btn button:hover,
 .button-link a:hover{
   color: var(--font-color);
   background-color: var(--hover);
 }
+
+
+
+
 
 
 
@@ -178,19 +202,24 @@ thead {
   width: 50%;
   margin-bottom: 1.2rem;
 }
+.input-flied textarea,
 .input-flied input{
   width: 97%;
-  padding: 10px;
+  padding: 6px;
   border-radius: var(--border-radius);
   border: 1px solid var(--color);
 }
+.input-flied textarea{
+  width: 98%;
+}
+.input-flied textarea:focus,
 .input-flied input:focus{
   outline: none;
   box-shadow: 0px 2px 5px -1px var(--hover);
 }
 .input-flied label{
   margin-bottom: 10px;
-  font-size: 1.1rem;
+  font-size: 15px;
 }
 .output-img{
   /* border: 1px solid red; */
@@ -200,4 +229,88 @@ thead {
 }
 .output-img img{
   border-radius: var(--border-radius);
+}
+
+
+
+.textarea{
+  width: 100%;
+}
+.loader{
+  height: 30vh;
+  width: 80% !important;
+  position: absolute;
+}
+
+th{
+  font-size: 13px;
+  font-weight: lighter;
+}
+td{
+  font-size: 12px;
+}
+
+.btn-oup{
+  z-index: 999999 !important;
+}
+
+.client-body{
+  /* border: 1px solid red; */
+}
+.body-img{
+  /* border: 1px solid red; */
+  width: 240px;
+  height: 8vh;
+  margin-bottom: 1rem;
+}
+
+.modal-content h4{
+  font-size: 14px;
+  /* border-bottom: 2px solid red; */
+}
+
+.modal-content h6{
+  font-size: 13px;
+  color: gray;
+}
+.dropdown-men{
+  width: 8rem !important;
+}
+.dropdown-men li{
+  margin: 0 5px;
+}
+.dropdown-men li a{
+  padding: 5px !important;
+  /* border: 1px solid red; */
+}
+.dropdown-men li a:hover{
+  background-color: var(--color);
+  color: var(--font-color);
+}
+.text-content{
+  margin-bottom: 10px;
+  border-bottom: 1px dotted gray;
+}
+.modal-content{
+  border: none;
+  box-shadow: 0px 0px 12px -3px gray;
+}
+.text-content:nth-last-child(1){
+  border: none;
+}
+
+.x-content{
+  box-shadow: none !important;
+}
+
+
+.edit-file{
+  /* border: 1px solid red; */
+  height: 16vh;
+  padding: 1rem;
+}
+
+.modal-backdrop{
+  background-color: transparent;
+  z-index: -1;
 }
